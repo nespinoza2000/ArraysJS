@@ -39,16 +39,18 @@ console.log(palabrasTerminanConA(palabras)) // -> true
 // 4.1 Crea una función llamada `buscaPalabras` que reciba dos parámetros: un array `words` y una palabra `word`.
 // Busca el índice de la palabra en el array y devuelve todas las palabras más largas que ese índice.
 function buscaPalabras(words, word) {
-    const index = words.indexOF(word);
+    const index = words.indexOf(word);
     if (index === -1) {
         return [];
     }
-    return words.slice(index + 1);
+    const wordLength = word.length;
+    return words.filter((w, i) => i > index && w.length > wordLength); // Filtrar palabras más largas
 }
 
 const words = ['manzana', 'banana', 'pera', 'uva', 'naranja'];
 const word = 'pera';
 console.log(buscaPalabras(words, word));
+
 
 // 5. Matrices
 // 5.1 Crea una función llamada `findJavaScript` que reciba una matriz de cadenas y devuelva la posición de "JavaScript".
