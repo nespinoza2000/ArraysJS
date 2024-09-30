@@ -1,0 +1,17 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Cambiado para que los elementos estén uno debajo del otro */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: ivory;
+}
+
+.contenedor1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 10px;
+    color: darkslateblue;
+}
