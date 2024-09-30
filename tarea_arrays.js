@@ -73,7 +73,7 @@ const matrix = [
 ]
 
 const position = findJavaScript(matrix);
-console.log(position); // -> [0, 2]
+console.log(position);
 
 // 6. Algoritmos con Arrays
 // 6.1 Crea una función llamada `findMinMaxPages` que reciba un array de números (representando el número de páginas de libros).
@@ -82,7 +82,7 @@ function findMinMaxPages(books) {
     let minIndex = 0;
     let maxIndex = 0;
 
-    for (let i = 1; i < books.lenght; i++) {
+    for (let i = 1; i < books.length; i++) { // Cambiado 'lenght' a 'length'
         if (books[i] < books[minIndex]) {
             minIndex = i;
         }
@@ -96,6 +96,7 @@ function findMinMaxPages(books) {
 const libros = [350, 120, 540, 275, 390, 130, 670];
 const resultado = findMinMaxPages(libros);
 console.log(resultado); // -> [1, 6]
+
 
 // Exportar las funciones para que puedan ser completadas y probadas
 module.exports = {
