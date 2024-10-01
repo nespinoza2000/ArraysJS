@@ -24,7 +24,7 @@ function sumarPares(numeros) {
 // 3. Buscar en Arrays
 // 3.1 Escribe una función llamada `palabrasTerminanConA` que reciba un array de palabras y devuelva `true` si todas terminan con "a", o `false` si al menos una no lo hace.
 function palabrasTerminanConA(palabras) {
-    for (let i = 0; i < palabras.lenght; i++) {
+    for (let i = 0; i < palabras.length; i++) {
         if (!palabras[i].endsWith('a')) {
             return false;
         }
@@ -56,8 +56,8 @@ console.log(buscaPalabras(words, word));
 // 5.1 Crea una función llamada `findJavaScript` que reciba una matriz de cadenas y devuelva la posición de "JavaScript".
 // Si no la encuentra, devuelve [-1, -1].
 function findJavaScript(matrix) {
-    for (let i = 0; i < matrix.lenght; i++) {
-        for (let j = 0; j < matrix[i].lenght; j++) {
+    for (let i = 0; i < matrix.length; i++) {
+        for (let j = 0; j < matrix[i].length; j++) {
             if (matrix[i][j] === 'Java') {
                 return [i, j];
             }
